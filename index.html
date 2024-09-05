@@ -17,10 +17,15 @@
                 <a href="index.html" class="logo-container">
                     <img src="logo.png" alt="Hardwood Hero Logo" class="logo">
                 </a>
-                <button class="hamburger-container" aria-label="Toggle menu">
-                    <span class="hamburger"></span>
-                </button>
                 <div class="nav-links-container">
+                    <ul class="nav-links" id="desktop-menu">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav-links-container mobile">
                     <ul class="nav-links" id="mobile-menu">
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
@@ -35,28 +40,28 @@
     <main>
         <section class="hero">
             <div class="hero-slider">
-                <div class="slide active" style="background-image: url('Images/hero-image-1.jpg');">
+                <div class="slide active" style="background-image: url('images/hero-image-1.jpg');">
                     <div class="slide-content">
                         <h1>Hardwood Hero: Des Moines' Flooring Superhero</h1>
                         <p>Transforming homes with expert hardwood flooring services</p>
                         <a href="#contact" class="btn-primary">Get a Free Quote</a>
                     </div>
                 </div>
-                <div class="slide" style="background-image: url('Images/hero-image-2.jpg');">
+                <div class="slide" style="background-image: url('images/hero-image-2.jpg');">
                     <div class="slide-content">
                         <h1>Stairway to Beauty</h1>
                         <p>Expert refinishing for every step of your home</p>
                         <a href="#services" class="btn-primary">Our Services</a>
                     </div>
                 </div>
-                <div class="slide" style="background-image: url('Images/hero-image-3.jpg');">
+                <div class="slide" style="background-image: url('images/hero-image-3.jpg');">
                     <div class="slide-content">
                         <h1>Stunning Transformations</h1>
                         <p>Breathe new life into your living spaces</p>
                         <a href="#portfolio" class="btn-primary">View Our Work</a>
                     </div>
                 </div>
-                <div class="slide" style="background-image: url('Images/hero-image-4.jpg');">
+                <div class="slide" style="background-image: url('images/hero-image-4.jpg');">
                     <div class="slide-content">
                         <h1>Before & After Magic</h1>
                         <p>See the dramatic difference we can make</p>
@@ -76,65 +81,57 @@
                             <i class="fas fa-broom"></i>
                             <h3>Dustless Sanding</h3>
                             <p>Our state-of-the-art dustless sanding technology ensures a clean, mess-free process.</p>
-                            <div class="service-details hidden">
-                                <p>Our dustless sanding process uses advanced equipment to capture 99% of the dust created during the sanding process. This means:
-                                    <ul>
-                                        <li>A cleaner home during and after the process</li>
-                                        <li>Reduced allergens and irritants in the air</li>
-                                        <li>Faster completion times with less cleanup</li>
-                                        <li>Better adhesion for stains and finishes</li>
-                                    </ul>
-                                </p>
+                            <div class="service-details">
+                                <p>Our dustless sanding process uses advanced equipment to capture 99% of the dust created during the sanding process. This means:</p>
+                                <ul>
+                                    <li>A cleaner home during and after the process</li>
+                                    <li>Reduced allergens and irritants in the air</li>
+                                    <li>Faster completion times with less cleanup</li>
+                                    <li>Better adhesion for stains and finishes</li>
+                                </ul>
                             </div>
-                            <button class="btn-secondary learn-more">Learn More</button>
                         </div>
                         <div class="service-item">
                             <i class="fas fa-hammer"></i>
                             <h3>Installation</h3>
                             <p>Expert installation of various hardwood flooring types to suit your style and budget.</p>
-                            <div class="service-details hidden">
-                                <p>Our installation services include:
-                                    <ul>
-                                        <li>Professional assessment of your subfloor</li>
-                                        <li>Wide selection of hardwood species and styles</li>
-                                        <li>Precise installation techniques for long-lasting results</li>
-                                        <li>Thorough cleanup and walk-through after completion</li>
-                                    </ul>
-                                </p>
+                            <div class="service-details">
+                                <p>Our installation services include:</p>
+                                <ul>
+                                    <li>Professional assessment of your subfloor</li>
+                                    <li>Wide selection of hardwood species and styles</li>
+                                    <li>Precise installation techniques for long-lasting results</li>
+                                    <li>Thorough cleanup and walk-through after completion</li>
+                                </ul>
                             </div>
-                            <button class="btn-secondary learn-more">Learn More</button>
                         </div>
                         <div class="service-item">
                             <i class="fas fa-spray-can"></i>
                             <h3>Refinishing</h3>
                             <p>Bring new life to your existing hardwood floors with our professional refinishing services.</p>
-                            <div class="service-details hidden">
-                                <p>Our refinishing process includes:
-                                    <ul>
-                                        <li>Thorough cleaning and preparation of existing floors</li>
-                                        <li>Repair of any damaged areas</li>
-                                        <li>Multiple sanding stages for a smooth finish</li>
-                                        <li>Application of high-quality stains and finishes</li>
-                                    </ul>
-                                </p>
+                            <div class="service-details">
+                                <p>Our refinishing process includes:</p>
+                                <ul>
+                                    <li>Thorough cleaning and preparation of existing floors</li>
+                                    <li>Repair of any damaged areas</li>
+                                    <li>Multiple sanding stages for a smooth finish</li>
+                                    <li>Application of high-quality stains and finishes</li>
+                                </ul>
                             </div>
-                            <button class="btn-secondary learn-more">Learn More</button>
                         </div>
                         <div class="service-item">
                             <i class="fas fa-paint-roller"></i>
                             <h3>Custom Staining</h3>
                             <p>Choose from a wide range of stain colors to perfectly match your home's aesthetic.</p>
-                            <div class="service-details hidden">
-                                <p>Our custom staining service offers:
-                                    <ul>
-                                        <li>Extensive color options to match any decor</li>
-                                        <li>Custom color mixing for unique shades</li>
-                                        <li>Sample testing to ensure your satisfaction</li>
-                                        <li>Expert application for consistent, beautiful results</li>
-                                    </ul>
-                                </p>
+                            <div class="service-details">
+                                <p>Our custom staining service offers:</p>
+                                <ul>
+                                    <li>Extensive color options to match any decor</li>
+                                    <li>Custom color mixing for unique shades</li>
+                                    <li>Sample testing to ensure your satisfaction</li>
+                                    <li>Expert application for consistent, beautiful results</li>
+                                </ul>
                             </div>
-                            <button class="btn-secondary learn-more">Learn More</button>
                         </div>
                     </div>
                     <button class="carousel-arrow right-arrow" aria-label="Scroll right">&#10095;</button>
@@ -147,16 +144,16 @@
                 <h2>Our Heroic Transformations</h2>
                 <div class="portfolio-gallery">
                     <div class="portfolio-item">
-                        <img src="Images/living-room-refinish.jpg" alt="Living room floor refinishing" onclick="openLightbox(this)">
+                        <img src="images/living-room-refinish.jpg" alt="Living room floor refinishing" onclick="openLightbox(this)">
                     </div>
                     <div class="portfolio-item">
-                        <img src="Images/kitchen-installation.jpg" alt="Kitchen hardwood installation" onclick="openLightbox(this)">
+                        <img src="images/kitchen-installation.jpg" alt="Kitchen hardwood installation" onclick="openLightbox(this)">
                     </div>
                     <div class="portfolio-item">
-                        <img src="Images/sanding-process.jpg" alt="Floor sanding process" onclick="openLightbox(this)">
+                        <img src="images/sanding-process.jpg" alt="Floor sanding process" onclick="openLightbox(this)">
                     </div>
                     <div class="portfolio-item">
-                        <img src="Images/custom-stain-transformation.jpg" alt="Custom staining transformation" onclick="openLightbox(this)">
+                        <img src="images/custom-stain-transformation.jpg" alt="Custom staining transformation" onclick="openLightbox(this)">
                     </div>
                 </div>
             </div>
