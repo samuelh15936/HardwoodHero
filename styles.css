@@ -231,6 +231,8 @@ h1, h2, h3, h4 {
     overflow: visible;
     display: flex;
     flex-direction: column;
+    height: auto;
+    overflow: visible;
 }
 
 .service-item:hover {
@@ -252,8 +254,11 @@ h1, h2, h3, h4 {
 }
 
 .service-details {
+    display: block;
     text-align: left;
     margin-top: 1rem;
+    height: auto;
+    overflow: visible;
 }
 
 .service-details ul {
@@ -275,6 +280,7 @@ h1, h2, h3, h4 {
     cursor: pointer;
     z-index: 10;
     transition: background-color 0.3s ease;
+    display: block;
 }
 
 .carousel-arrow:hover {
@@ -320,6 +326,8 @@ h1, h2, h3, h4 {
         margin-right: 0;
         margin-bottom: 1.5rem;
         scroll-snap-align: none;
+        height: auto;
+        overflow: visible;
     }
 
     .service-item:last-child {
@@ -637,6 +645,8 @@ h1, h2, h3, h4 {
         margin-right: 0;
         margin-bottom: 1.5rem;
         scroll-snap-align: none;
+        height: auto;
+        overflow: visible;
     }
 
     .service-item:last-child {
